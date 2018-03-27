@@ -13,5 +13,9 @@ WIN_COMBINATIONS = [
   [1, 4, 7], #Second column
   [2, 5, 8], #Third column
   [0, 4, 8], #Diagonal One
-  [6, 4, 2], #Diagonal Two
+  [2, 4, 6], #Diagonal Two
 ]
+
+def won(board)
+
+end
