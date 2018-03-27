@@ -19,5 +19,6 @@ WIN_COMBINATIONS = [
 def won(board)
   WIN_COMBINATIONS.each do |set|
     puts set
+    puts "/n"
   end
-end
+end)
