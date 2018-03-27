@@ -21,4 +21,4 @@ def won(board)
     puts set
     puts "/n"
   end
-end)
+end
