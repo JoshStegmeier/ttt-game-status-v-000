@@ -15,8 +15,3 @@ WIN_COMBINATIONS = [
   [0, 4, 8], #Diagonal One
   [6, 4, 2], #Diagonal Two
 ]
-
-
-0 1 2
-3 4 5
-6 7 8
