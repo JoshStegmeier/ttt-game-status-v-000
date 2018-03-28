@@ -42,6 +42,6 @@ end
 
 def full?(board)
   all_full = board.reject do |value|
-    value == "" | " "
+    value == "" || " "
   end
 end
