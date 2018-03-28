@@ -21,13 +21,7 @@ def won(board)
     puts "first, list each combo array. #{combo_array}"
     combo_array.each do |array_item|
       puts "now, list each array item. #{array_item}"
-      win_index_1 = array_item[0]
-      win_index_2 = array_item[1]
-      win_index_3 = array_item[2]
-
-      puts "here is win_index_1 #{win_index_1}"
-      puts "here is win_index_2 #{win_index_2}"
-      puts "here is win_index_3 #{win_index_3}"
+      win_index_1 = array_item
     end
   end
 end
