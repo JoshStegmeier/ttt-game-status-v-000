@@ -16,8 +16,6 @@ WIN_COMBINATIONS = [
   [2, 4, 6], #Diagonal Two
 ]
 
-Winning_person = 0
-
 def won?(board)
   winning_combo = 0
   WIN_COMBINATIONS.each do |combo_array|
