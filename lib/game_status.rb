@@ -19,13 +19,12 @@ WIN_COMBINATIONS = [
 def won(board)
   WIN_COMBINATIONS.each do |combo_array|
     puts "first, list each combo array. #{combo_array}"
-      win_index_1 = combo_array[0]
-      win_index_2 = combo_array[1]
-      win_index_3 = combo_array[2]
+    win_index_1 = combo_array[0]
+    win_index_2 = combo_array[1]
+    win_index_3 = combo_array[2]
 
-      puts "#{win_index_1}"
-      puts "#{win_index_2}"
-      puts "#{win_index_3}"
-    end
+    puts "#{win_index_1}"
+    puts "#{win_index_2}"
+    puts "#{win_index_3}"
   end
 end
