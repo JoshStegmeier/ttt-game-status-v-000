@@ -98,10 +98,11 @@ def winner_function(board)
 end
 
 def winner(board)
-  store_combo = winner_function(board)
+  store_person = winner_function(board)
+  store_combo = won?(board)
   if store_combo == false
     return nil
-  elsif store_combo == "X"
+  elsif store_person == "X"
     return "X"
   elsif store_combo == "O"
     return "O"
