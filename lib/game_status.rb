@@ -45,3 +45,7 @@ def full?(board)
     value.include?("X") || value.include?("O")
   end
 end
+
+def draw(board)
+  if full?(board) && won?(board)
+end
