@@ -100,9 +100,9 @@ def winner(board)
   store_combo = winner_function(board)
   if store_combo == false
     return nil
-  elsif winning_person == "X"
+  elsif store_combo == "X"
     return "X"
-  elsif winning_person == "O"
+  elsif store_combo == "O"
     return "O"
   else
     return false
