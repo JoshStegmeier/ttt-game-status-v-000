@@ -39,3 +39,12 @@ def won?(board)
     return false
   end
 end
+
+def full?(board)
+  empty_status = board.include(" ")
+  if empty_status == true
+    return false
+  elsif empty_status == false
+    return true
+  end
+end
