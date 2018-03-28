@@ -41,7 +41,7 @@ def won?(board)
 end
 
 def full?(board)
-  all_full = board.all? do |value|
-    value == "X" | "O"
+  all_full = board.reject? do |value|
+    value == "" | " "
   end
 end
