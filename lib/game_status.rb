@@ -34,4 +34,5 @@ def won?(board)
     return winning_combo
   else
     return false
+  end
 end
