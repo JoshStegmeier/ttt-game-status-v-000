@@ -22,6 +22,10 @@ def won(board)
       win_index_1 = array_item[0]
       win_index_2 = array_item[1]
       win_index_3 = array_item[2]
+
+      puts "here is win_index_1 #{win_index_1}"
+      puts "here is win_index_2 #{win_index_2}"
+      puts "here is win_index_3 #{win_index_3}"
     end
   end
 end
