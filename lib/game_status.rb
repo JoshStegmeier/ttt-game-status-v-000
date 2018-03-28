@@ -16,6 +16,8 @@ WIN_COMBINATIONS = [
   [2, 4, 6], #Diagonal Two
 ]
 
+winning_person = none
+
 def won?(board)
   winning_combo = 0
   WIN_COMBINATIONS.each do |combo_array|
@@ -29,6 +31,7 @@ def won?(board)
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       winning_combo = combo_array
+      
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       winning_combo = combo_array
     end
