@@ -67,9 +67,9 @@ end
 def winner(board)
   store_combo = won?(board)
   if store_combo != false
-    if store_combo.include?("X")
+    if store_combo[0] == "X"
       return "X"
-    elseif store_combo.include?("O")
+    elseif store_combo[0] == "O"
       return "O"
     end
   end
