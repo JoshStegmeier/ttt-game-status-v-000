@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
   [2, 4, 6], #Diagonal Two
 ]
 
-winning_person = 0
+Winning_person = 0
 
 def won?(board)
   winning_combo = 0
