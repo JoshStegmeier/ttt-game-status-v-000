@@ -55,7 +55,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board) == winning_combo
+  if won?(board) == !0
     return true
   elsif draw?(board) == true
     return true
