@@ -18,7 +18,9 @@ WIN_COMBINATIONS = [
 
 def won(board)
   WIN_COMBINATIONS.each do |combo_array|
+    puts "first, list each combo array. #{combo_array}"
     combo_array.each do |array_item|
+      puts "now, list each array item. #{array_item}"
       win_index_1 = array_item[0]
       win_index_2 = array_item[1]
       win_index_3 = array_item[2]
