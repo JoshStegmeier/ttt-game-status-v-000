@@ -18,18 +18,21 @@ WIN_COMBINATIONS = [
 
 def won(board)
   WIN_COMBINATIONS.each do |set|
-    win_index_1 = set[0]
-    win_index_2 = set[1]
-    win_index_3 = set[2]
+    set.each do |element|
+    
+      win_index_1 = set[0]
+      win_index_2 = set[1]
+      win_index_3 = set[2]
 
-    position_1 = board[win_index_1]
-    position_2 = board[win_index_2]
-    position_3 = board[win_index_3]
+      position_1 = board[win_index_1]
+      position_2 = board[win_index_2]
+      position_3 = board[win_index_3]
 
-    if position_1 == "X" && position_2 == "X" && position_3 == "X"
-      return set
-    else
-      false
+      if position_1 == "X" && position_2 == "X" && position_3 == "X"
+        return set
+      else
+        false
+      end
     end
   end
 end
