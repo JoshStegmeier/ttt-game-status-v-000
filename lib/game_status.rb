@@ -71,6 +71,7 @@ end
 
 def winner_function(board)
   winning_combo = 0
+  winning_person = 0
   WIN_COMBINATIONS.each do |combo_array|
     win_index_1 = combo_array[0]
     win_index_2 = combo_array[1]
