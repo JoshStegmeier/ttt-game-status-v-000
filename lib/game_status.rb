@@ -63,3 +63,14 @@ def over?(board)
     return false
   end
 end
+
+def winner(board)
+  store_combo = won?(board)
+  if store_combo != false
+    if store_combo.include?("X")
+      return "X"
+    elseif store_combo.include?("O")
+      return "O"
+    end
+  end
+end
