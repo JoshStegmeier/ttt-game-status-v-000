@@ -41,10 +41,7 @@ def won?(board)
 end
 
 def full?(board)
-  empty_status = board.include(" ")
-  if empty_status == true
-    return false
-  elsif empty_status == false
-    return true
+  all_full = board.all? do |value|
+    value == "X" | "O"
   end
 end
