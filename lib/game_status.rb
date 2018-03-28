@@ -44,4 +44,5 @@ def full?(board)
   all_full = board.all? do |value|
     value == "X" && "O"
   end
+  all_full
 end
