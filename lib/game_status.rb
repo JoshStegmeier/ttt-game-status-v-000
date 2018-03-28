@@ -66,11 +66,13 @@ end
 
 def winner(board)
   store_combo = won?(board)
-  if store_combo != false
-    if store_combo[0] == "X"
-      return "X"
-    elseif store_combo[0] == "O"
-      return "O"
-    end
+  if store_combo == false
+    return nil
+  elsif store_combo.include?("X")
+    return "X"
+  elsif store_combo.include?("O")
+    return "O"
+  else
+    return false
   end
 end
