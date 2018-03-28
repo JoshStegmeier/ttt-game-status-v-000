@@ -104,7 +104,7 @@ def winner(board)
     return nil
   elsif store_person == "X"
     return "X"
-  elsif store_combo == "O"
+  elsif store_person == "O"
     return "O"
   else
     return false
