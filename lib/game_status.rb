@@ -67,8 +67,37 @@ def over?(board)
   end
 end
 
+
+
+def winner_function(board)
+  winning_combo = 0
+  WIN_COMBINATIONS.each do |combo_array|
+    win_index_1 = combo_array[0]
+    win_index_2 = combo_array[1]
+    win_index_3 = combo_array[2]
+
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
+
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      winning_combo = combo_array
+      winning_person = "X"
+
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+      winning_combo = combo_array
+      winning_person = "O"
+    end
+  end
+  if winning_combo != 0
+    return winning_person
+  else
+    return false
+  end
+end
+
 def winner(board)
-  store_combo = won?(board)
+  store_combo = winner_function(board)
   if store_combo == false
     return nil
   elsif winning_person == "X"
