@@ -73,9 +73,9 @@ def winner(board)
   store_combo = won?(board)
   if store_combo == false
     return nil
-  elsif store_combo.include?("X")
+  elsif winning_person == "X"
     return "X"
-  elsif store_combo.include?("O")
+  elsif winning_person == "O"
     return "O"
   else
     return false
