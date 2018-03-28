@@ -31,7 +31,7 @@ def won?(board)
       winning_combo = combo_array
     end
   end
-  if winning_combo
+  if winning_combo != 0
     return winning_combo
   else
     return false
